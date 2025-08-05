@@ -39,6 +39,7 @@ class _AnimationTutorial1State extends State<AnimationTutorial1> with SingleTick
           animation: _animationController,
           builder: (context,child){
             return Transform(
+              alignment: Alignment.center,
               transform: Matrix4.identity()..rotateY(_animation.value),
               child: Container(
                 width: 100,
